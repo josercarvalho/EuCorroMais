@@ -1,0 +1,190 @@
+﻿@model IEnumerable<EuCorro.Domain.Models.Evento>
+
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Areas/Clientes/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EventoTipoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModalidadeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TituloEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PastaFiles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.URL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoneContato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailContato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Instritos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataEncerramento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraEncerramento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstadoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CidadeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescricaoEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Regulamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InformacaoKit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImagemKit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BannerEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BannerPatrocinio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ativo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PontoDeVenda_PontoDeVendasId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inscricoes_InscricoesId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventoTipoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModalidadeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataCadastro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TituloEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PastaFiles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.URL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoneContato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailContato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Instritos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataEncerramento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraEncerramento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Endereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstadoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CidadeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescricaoEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Regulamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InformacaoKit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImagemKit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BannerEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BannerPatrocinio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ativo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PontoDeVenda_PontoDeVendasId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inscricoes_InscricoesId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EventoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EventoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EventoId })
+        </td>
+    </tr>
+}
+
+</table>

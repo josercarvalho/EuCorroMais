@@ -1,0 +1,13 @@
+﻿@model EuCorro.MVC.Site.ViewModels.ImageGallery
+
+<h5 class="subtitle">PARCEIROS/CLIENTES</h5>
+
+@foreach (var image in Model.ImageList)
+{
+    <div class="app-event-card-item app-card-shadow">
+        <div class="box event-banner">
+            <img src="@Url.Content("~/Uploads/Parceiros/" + image)" class="imgBox" />
+            @*<a target="_blank" href="#"><img alt="Companhia Vale do Rio Doce" src="~/img/pvale-255x140.jfif"></a>*@
+        </div>
+    </div>    
+}
